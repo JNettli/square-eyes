@@ -7,10 +7,10 @@ body {
     flex-direction: column;
 }
 #topofpage {
-    margin: auto;
+    display: flex;
 }
 #copyright {
-    margin-top: 8px;
+    margin-top: 32px;
 }
 a {
     display: block;
@@ -30,6 +30,7 @@ a:active {
 .navbar {
     position: sticky;
     overflow: hidden;
+    display: flex;
     background-color: #242428;
     color: #FFFFFF;
     border-bottom: 2px;
@@ -39,13 +40,21 @@ a:active {
 
 .navbar .search-container {
     display: flex;
-    justify-content: center;
+    margin: 0 auto 0 22%;
+}
+
+.navbar input[type=text] {
+    padding: 8px;
+    border: none;
+    margin: auto;
+    font-size: 16px;
+    width: 30vw;
 }
 
 .navbar .search-container button {
     float: right;
-    margin-top: 8px;
-    margin-right: 16px;
+    padding: 8px;
+    margin: auto;
     background: #008a1e;
     font-size: 16px;
     border: none;
@@ -56,12 +65,28 @@ a:active {
     background: #00b12f;
 }
 
-.navbar input[type=text] {
-    padding: 8px;
+.navbtn {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
     border: none;
-    margin-top: 8px;
-    font-size: 16px;
-    width: 420px;
+    margin: auto 12% auto auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbtn a:hover {
+    text-decoration: underline;
+    text-decoration-color: #CA0000;
+}
+
+.navbtn a.active {
+    text-decoration: underline;
+    text-decoration-color: #CA0000;
+}
+.navicons {
+    margin: auto 16px;
 }
 
 .footerc {
@@ -91,24 +116,3 @@ a:active {
     display: flex;
 }
 
-.navbtn {
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    padding: 16px 70px 16px 16px;
-    display: inline;
-    float: right;
-    text-align: center;
-    cursor: pointer;
-}
-
-.navbtn a:hover {
-    text-decoration: underline;
-    text-decoration-color: #CA0000;
-}
-
-.navbtn a.active {
-    text-decoration: underline;
-    text-decoration-color: #CA0000;
-}
