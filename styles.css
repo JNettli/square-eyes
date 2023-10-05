@@ -1,17 +1,31 @@
+/* --- * relates its values to EVERYTHING on the site --- */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- MAIN BODY CSS VALUES --- */
+
 body {
     margin: 0;
     background-color: #09090B;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
+/* --- ID VALUES --- */
+
 #topofpage {
     display: flex;
 }
+
 #copyright {
     margin-top: 32px;
 }
+
+/* --- ALL GENERAL ANCHOR CSS VALUES. CAN BE OVERWRITTEN BY SPECIFYING WHAT KIND OF ANCHOR WE GIVE VALUES TO --- */
+
 a {
     display: block;
     color: #FFFFFF;
@@ -27,8 +41,12 @@ a:active {
     text-decoration-color: #CA0000;
 }
 
+/* --- NAVIGATIONBAR CSS VALUES --- */
+
 .navbar {
-    position: sticky;
+    width: 100%;
+    position: fixed;
+    z-index: 2; 
     overflow: hidden;
     display: flex;
     background-color: #242428;
@@ -89,7 +107,58 @@ a:active {
     margin: auto 16px;
 }
 
+/* --- SIDEBAR ELEMENT --- */
+
+.sidenav {
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 56px;
+    background-color: #242428;
+    border-right: 2px;
+    border-right-style: solid;
+    border-color: #666;
+}
+
+.sidenav a {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 70px;
+    border: 1px;
+    border-style: solid;
+    border-color: #AAA;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #666666;
+}
+
+.sidenav a:active {
+    background-color: #AAA;
+    color: #CA0000;
+}
+
+/* --- PRODUCT PAGE LIST CSS STYLE VALUES --- */
+
+.listpage {
+    margin-left: 280px;
+    padding: 0px 10px;
+}
+
+
+/* --- FOOTER CONTAINER CSS VALUES --- */
+
 .footerc {
+    z-index: 2;
     margin-top: auto;
     background-color: #242428;
     color: #FFFFFF;
