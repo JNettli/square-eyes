@@ -17,7 +17,13 @@ body {
 /* --- ID VALUES --- */
 
 #topofpage {
-    display: flex;
+    display: none;
+}
+
+#logo {
+    width: auto;
+    height: auto;
+    
 }
 
 #copyright {
@@ -125,10 +131,25 @@ a:active {
 }
 
 .sidenav a {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 70px;
-    border: 1px;
+    border-left: 0px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #AAA;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: block;
+}
+#sidenavbottom {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 70px;
+    border: 2px;
     border-style: solid;
     border-color: #AAA;
     text-decoration: none;
@@ -150,7 +171,8 @@ a:active {
 /* --- PRODUCT PAGE LIST CSS STYLE VALUES --- */
 
 .listpage {
-    margin-left: 280px;
+    margin-top: 70px;
+    margin-left: 324px;
     padding: 0px 10px;
 }
 
