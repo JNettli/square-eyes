@@ -65,6 +65,16 @@ button:hover {
 }
 
 .animate {
-    -webkit-animation: ease-in-out 0.6s;
-    animation: ease-in-out 0.6s;
+    -webkit-animation: animatezoom 0.6;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
 }
