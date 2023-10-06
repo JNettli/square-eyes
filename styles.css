@@ -142,6 +142,7 @@ a:active {
     border-right: 2px;
     border-right-style: solid;
     border-color: #666;
+    align-items: center;
 }
 
 .sidenav a {
