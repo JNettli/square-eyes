@@ -1,8 +1,6 @@
 /* --- * relates its values to EVERYTHING on the site --- */
-
-* {
-    font-family: 'Montserrat', sans-serif;
-}
+/* font-family: 'Antonio', sans-serif;
+font-family: 'Montserrat', sans-serif; */
 
 /* --- MAIN BODY CSS VALUES --- */
 
@@ -12,6 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* --- ID VALUES --- */
@@ -92,8 +91,9 @@ a:active {
 
 .navbtn {
     display: flex;
+    font-family: 'Antonio', sans-serif;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     border: none;
     margin: auto 12% auto auto;
@@ -102,9 +102,9 @@ a:active {
 }
 
 .navbtncurrent {
-    display: flex;
     color: #FFFFFF;
-    font-size: 20px;
+    font-family: 'Antonio', sans-serif;
+    font-size: 24px;
     font-weight: 600;
     border: none;
     margin: auto 12% auto auto;
