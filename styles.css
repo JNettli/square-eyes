@@ -15,7 +15,7 @@ body {
 
 /* --- ID VALUES --- */
 
-#topofpage {
+#top-page {
     display: flex;
 }
 
@@ -48,7 +48,7 @@ a:active {
 
 /* --- NAVIGATIONBAR CSS VALUES --- */
 
-.navbar {
+.nav-bar {
     width: 100%;
     position: fixed;
     z-index: 2; 
@@ -62,12 +62,12 @@ a:active {
     border-bottom-style: solid;
 }
 
-.navbar .search-container {
+.nav-bar .search-container {
     display: flex;
     margin: 0 auto 0 22%;
 }
 
-.navbar input[type=text] {
+.nav-bar input[type=text] {
     padding: 8px;
     border: none;
     margin: auto;
@@ -75,7 +75,7 @@ a:active {
     width: 30vw;
 }
 
-.navbar .search-container button {
+.nav-bar .search-container button {
     float: right;
     padding: 8px;
     margin: auto;
@@ -85,11 +85,11 @@ a:active {
     cursor: pointer;
 }
 
-.navbar .search-container button:hover {
+.nav-bar .search-container button:hover {
     background: #00b12f;
 }
 
-.navbtn {
+.nav-btn {
     display: flex;
     font-family: 'Antonio', sans-serif;
     color: #FFFFFF;
@@ -101,7 +101,7 @@ a:active {
     cursor: pointer;
 }
 
-.navbtncurrent {
+.nav-btn-current {
     color: #FFFFFF;
     font-family: 'Antonio', sans-serif;
     font-size: 24px;
@@ -114,26 +114,25 @@ a:active {
     text-decoration-color: #CA0000;
 }
 
-.navbtn a:hover {
+.nav-btn a:hover {
     text-decoration: underline;
     text-decoration-color: #fff;
 }
 
-.navbtn a:active {
+.nav-btn a:active {
     text-decoration: underline;
     text-decoration-color: #CA0000;
 }
-.navicons {
+.nav-icons {
     margin: auto 16px;
 }
 
 /* --- SIDEBAR ELEMENT --- */
 
-.sidenav {
+.side-nav {
     height: 100%;
     width: 280px;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -145,7 +144,7 @@ a:active {
     align-items: center;
 }
 
-.sidenav a {
+.side-nav a {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 70px;
@@ -162,54 +161,54 @@ a:active {
     display: block;
 }
 
-.sidenav a:hover {
+.side-nav a:hover {
     background-color: #666666;
 }
 
-.sidenav a:active {
+.side-nav a:active {
     background-color: #AAA;
     color: #CA0000;
 }
 
-#favoritescat {
+#favorites-cat {
     font-size: 24px;
 }
 
-#actioncat {
+#action-cat {
     font-size: 24px;
 
 }
-#dramacat {
+#drama-cat {
     font-size: 24px;
 }
 
-#horrorcat {
+#horror-cat {
     font-size: 24px;
 
 }
-#thrillercat {
+#thriller-cat {
     font-size: 24px;
 }
 
-#comedycat {
+#comedy-cat {
     font-size: 24px;
 }
 
-#scificat {
+#scifi-cat {
     font-size: 24px;
 }
 
-#romancecat {
+#romance-cat {
     font-size: 24px;
 }
 
-#fantasycat {
+#fantasy-cat {
     font-size: 24px;
 }
 
 /* --- PRODUCT PAGE LIST CSS STYLE VALUES --- */
 
-.listpage {
+.list-page {
     margin-top: auto;
     margin-left: 324px;
     padding: 0px 10px;
@@ -218,8 +217,8 @@ a:active {
 
 /* --- FOOTER CONTAINER CSS VALUES --- */
 
-.footerc {
-    z-index: 2;
+.footer-c {
+    z-index: 1;
     margin-top: auto;
     background-color: #242428;
     color: #FFFFFF;
@@ -231,18 +230,33 @@ a:active {
     padding-top: 16px;
 }
 
-.lfoot {
+.l-foot {
     float: left;
     display: inline;
 }
 
-.rfoot {
+.r-foot {
     float: right;
     text-align: right;
     display: inline;
 }
 
-.backtotop {
+.back-top {
     display: flex;
 }
 
+.bg-fade {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 57%, rgba(0,0,0,0.7) 100%);
+}
+
+.bg-img {
+    height: 100vh;
+    width: auto;
+    margin-top: 60px;
+    margin-bottom: -60px;
+    float: right;
+    object-fit: contain;
+}
